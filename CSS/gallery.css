@@ -1,0 +1,43 @@
+.projects-gallery{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.projects-gallery .gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gallery div{
+    width: 100%;
+    max-width: calc(1040px / 4);
+    height: 150px;
+    background-color: #11171f;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+
+.gallery span{
+    display: block;
+    position: absolute;
+    width: 300px;
+    transform: rotate(-25deg);
+    font-size: 2rem;
+    background-color: #080b0f;
+    text-align: center;
+    transition: 200ms;
+    color: #1e2125;
+}
+
+.gallery div:hover span{
+    transform: scale(1.1) 
+    rotate(-25deg);
+}

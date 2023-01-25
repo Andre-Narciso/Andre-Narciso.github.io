@@ -1,0 +1,49 @@
+.slider-wrapper{
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-wrapper button{
+    height: 100%;
+    width: 50px;
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.slider-wrapper button img{
+    transition: 200ms;
+}
+
+
+
+#toright{
+    right: 0;
+    background: linear-gradient(90deg, transparent 0%, #000 140%);
+}
+
+#toright:hover img{
+    transform: scale(1.4);
+}
+
+#toleft{
+    background: linear-gradient(270deg, transparent 0%, #000 140%);
+}
+
+#toleft:hover img{
+    transform: scale(1.4);
+}
+
+.slider{
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.slider img{
+    min-width: 100%;
+    max-height: 600px;
+}
